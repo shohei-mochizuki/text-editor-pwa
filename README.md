@@ -22,30 +22,10 @@ This is a text editor which saves your inputs even when you're offline! As this 
 If you access the application on [Heroku](https://text-editor-pwa-2023.herokuapp.com/), you can use the application on Heroku. If you would like to install it into your computer, click the install button at the top of the page.
 
 ### LOCAL
-This application requires 1.JavaScript, 2.Node.JS (version 16, not the latest), 3.Node package manager. In a blank folder, put necessary files (refer to the TESTS section for the details) and open the command line. In the command line, move to this folder and then type "npm install". Make sure that a folder called "node_modules" and a file called package-lock.json are created in all the root, server and client folders. Then type "npm start" and open the index.html.
+This application requires 1.JavaScript, 2.Node.JS (version 16, not the latest), 3.Node package manager. In a blank folder, put necessary files (refer to the TESTS section for the details) and open the command line. In the command line, move to this folder and then type "npm install". Make sure that a folder called "node_modules" and a file called package-lock.json are created in all the root, server and client folders. Then type "npm start" and open the index.html. Once you open the page, you can install it into your computer by clicking the install button at the top of the page if you would like.
 
 ## USAGE 
-
-### Command Line - Preparation
-In Command Line, type "npm start" and then you'll see a message "App listening on PORT 3001!". Go to Insomnia and request the following actions:
-
-#### Insomnia - Path
-* Users: http://localhost:3001/api/users/
-* Friends: http://localhost:3001/api/users/:userId/friends/
-* Thoughts: http://localhost:3001/api/thoughts/
-* Reactions: http://localhost:3001/api/thoughts/:thoughtId/reactions/
-
-#### Method
-* GET: to view data (you can add an ID at the end of the path like "/tags/2uyhsyiung6rt52x" if you would like to view specific data)
-* POST: to add new data 
-* PUT: to update existing data (you need to add an ID at the end of the path to specify the item)
-* DELETE: to delete data (you need to add an ID at the end of the path to specify the item)
-
-#### Inputs for POST and PUT
-* User: {"username": "string", "email": "email"}
-* Friend: Nothing in the request body but add the friend's userId at the end of the path
-* Thought: {"thoughtText": "string", "username": "string", "userId": "string (ID)"}
-* Reaction: {"reactionBody": "string", "username": "string"}
+Type whatever you like in the editor. Once you stop typing and when the focus is off, the data is saved and you will see it when you come back to the page after closing and reopening it or refreshing it. Make sure that you put the cursor outside of the text editor area and click outside of the text area as well.  
 
 ## LICENSE 
 MIT:<br>
