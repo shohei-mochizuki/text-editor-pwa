@@ -1,4 +1,4 @@
-# Social Media Data API [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# Note Editor - Progressive Web Application [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## DESCRIPTION 
 This application enables you to create and manage a social media platform where users can share their thoughts and leave reactions to other users' thoughts. Available operations include:
