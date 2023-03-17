@@ -5,6 +5,8 @@ const butInstall = document.getElementById('buttonInstall');
 window.addEventListener('beforeinstallprompt', (event) => {
   event.preventDefault();
 
+  console.log("BEFORE!");
+
   // Store the triggered events
   window.deferredPrompt = event;
 
@@ -39,3 +41,5 @@ window.addEventListener('appinstalled', (event) => {
   // Clear prompt
   window.deferredPrompt = null;
 });
+
+console.log("INSTALL.JS is read");
