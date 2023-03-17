@@ -24,15 +24,15 @@ export default class Editor {
 
     // When the editor is ready, set the value to whatever is stored in indexeddb.
     // Fall back to localStorage if nothing is stored in indexeddb, and if neither is available, set the value to header.
+    this.editor.setValue(header);
+    
     getDb().then((data) => {
       console.info('Loaded data from IndexedDB, injecting into editor');
       console.log('DATA', data);
       console.log('DATA.CONTENT', data.content);
       console.log('LOCAL DATA', localData);
-      if (data.content === "" || data.content === null) {
-        this.editor.setValue(header);
-      } else {
-        this.editor.setValue(data.content || localData);
+      if (data.content !== "" || data.content !== null) {
+        this.editor.setValue(data.content);
       }
     });
 
