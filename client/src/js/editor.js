@@ -26,6 +26,9 @@ export default class Editor {
     // Fall back to localStorage if nothing is stored in indexeddb, and if neither is available, set the value to header.
     getDb().then((data) => {
       console.info('Loaded data from IndexedDB, injecting into editor');
+      console.log(`DATA: ${data}`);
+      console.log(`LOCAL: ${localData}`);
+      console.log(`HEADER: ${header}`);
       this.editor.setValue(data || localData || header);
     });
 
@@ -36,7 +39,7 @@ export default class Editor {
 
     // Save the content of the editor when the editor itself is loses focus (when cursor is outside of the editor)
     this.editor.on('blur', () => {
-      console.log('The editor has lost focus');
+      console.log(`The editor has lost focus`);
       putDb(localStorage.getItem('content'));
     });
   }
