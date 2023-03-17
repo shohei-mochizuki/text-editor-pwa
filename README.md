@@ -17,9 +17,12 @@ This is a text editor which saves your inputs even when you're offline! As this 
 [QUESTIONS](#questions)
 
 ## INSTALLATION 
-This application requires 1.JavaScript, 2.Node.JS (version 16, not the latest), 3.Node package manager, 4.MongoDB, 5.MongoDB Compass and 6.Insomnia to run. In a blank folder, put necessary files (refer to the TESTS section for the details) and open the command line. In the command line, move to this folder and then type "npm install". Make sure that a folder called "node_modules" and a file called package-lock.json are created. Following libraries are used:
-* [express](https://www.npmjs.com/package/express)
-* [mongoose](https://www.npmjs.com/package/mongoose)
+
+### HEROKU
+If you access the application on [Heroku](https://text-editor-pwa-2023.herokuapp.com/), you can use the application on Heroku. If you would like to install it into your computer, click the install button at the top of the page.
+
+### LOCAL
+This application requires 1.JavaScript, 2.Node.JS (version 16, not the latest), 3.Node package manager. In a blank folder, put necessary files (refer to the TESTS section for the details) and open the command line. In the command line, move to this folder and then type "npm install". Make sure that a folder called "node_modules" and a file called package-lock.json are created in all the root, server and client folders. Then type "npm start" and open the index.html.
 
 ## USAGE 
 
