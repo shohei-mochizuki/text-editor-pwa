@@ -1,7 +1,7 @@
 # Text Editor - Progressive Web Application [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## DESCRIPTION 
-This is a text editor which saves your inputs even when you're offline! As this is a progressive web appilicasion, you can download it to your local computer and use it as a native application. It uses the following technologies:
+This is a text editor which saves your inputs even when you're offline! As this is a progressive web appilicasion, you can download it to your local computer and use it like a native application. It uses the following technologies:
 * Progressive Web Application
 * Service Worker
 * Indexed DB
