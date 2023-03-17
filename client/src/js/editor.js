@@ -29,11 +29,12 @@ export default class {
       this.editor.setValue(data || localData || header);
     });
 
+    // When the text in the editor is changed, save it to localStorage temporarily
     this.editor.on('change', () => {
       localStorage.setItem('content', this.editor.getValue());
     });
 
-    // Save the content of the editor when the editor itself is loses focus
+    // Save the content of the editor when the editor itself is loses focus (when cursor is outside of the editor)
     this.editor.on('blur', () => {
       console.log('The editor has lost focus');
       putDb(localStorage.getItem('content'));
