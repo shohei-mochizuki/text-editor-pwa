@@ -1,13 +1,10 @@
 # Text Editor - Progressive Web Application [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## DESCRIPTION 
-This application enables you to create and manage a social media platform where users can share their thoughts and leave reactions to other users' thoughts. Available operations include:
-* View user information (username, email address, list of thoughts/posts, list of friends and the number of friends) 
-* Create, update and delete users
-* Add and remove friends
-* View thought/post information (text, creation date, username, list of reactions which include text, username and creation date) 
-* Create, update and delete thoughts 
-* Create and delete reactions
+This is a text editor which saves your inputs even when you're offline! As this is a progressive web appilicasion, you can download it to your local computer and use it as a native application. It uses the following technologies:
+* Progressive Web Application
+* Service Worker
+* Indexed DB
 
 ## TABLE OF CONTENTS
 [INSTALLATION](#installation)<br>
