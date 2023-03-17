@@ -27,11 +27,12 @@ export default class Editor {
     getDb().then((data) => {
       console.info('Loaded data from IndexedDB, injecting into editor');
       console.log('DATA', data);
+      console.log('DATA.CONTENT', data.content);
       console.log('LOCAL DATA', localData);
-      if (data[0].content === null) {
-        this.editor.setValue(localData || header);
+      if (data.content === "" && localData === "") {
+        this.editor.setValue(header);
       } else {
-        this.editor.setValue(data[0].content);
+        this.editor.setValue(data.content || localData);
       }
     });
 
