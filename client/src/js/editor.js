@@ -29,7 +29,7 @@ export default class Editor {
       console.log('DATA', data);
       console.log('DATA.CONTENT', data.content);
       console.log('LOCAL DATA', localData);
-      if (data.content === "" && localData === "") {
+      if (data.content === "") {
         this.editor.setValue(header);
       } else {
         this.editor.setValue(data.content || localData);
