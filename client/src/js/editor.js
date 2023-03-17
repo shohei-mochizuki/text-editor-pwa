@@ -28,9 +28,6 @@ export default class Editor {
     
     getDb().then((data) => {
       console.info('Loaded data from IndexedDB, injecting into editor');
-      console.log('DATA', data);
-      console.log('DATA.CONTENT', data.content);
-      console.log('LOCAL DATA', localData);
       if (data.content !== "" || data.content !== null) {
         this.editor.setValue(data.content);
       }
