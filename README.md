@@ -68,10 +68,16 @@ If you access the application on [Heroku](https://text-editor-pwa-2023.herokuapp
 ``` 
 
 ## SCREENSHOTS
-![image](https://user-images.githubusercontent.com/121307266/225153970-23b64d2c-dc81-4247-8fac-cdd6f5012821.png)
-![image](https://user-images.githubusercontent.com/121307266/225153976-ba6afa1d-40d7-48b8-96d4-caed8f88d16a.png)
-![image](https://user-images.githubusercontent.com/121307266/225153979-6d60377c-30b2-478b-af19-4da92bb017c6.png)
-![image](https://user-images.githubusercontent.com/121307266/225153980-c27a7f29-e942-4fa8-bb01-5140a863eeef.png)
+Broswer version
+![image](https://user-images.githubusercontent.com/121307266/226054651-d234c4fb-b8c8-4e5b-a30d-f9aae114e03d.png)
+Installed application version 
+![image](https://user-images.githubusercontent.com/121307266/226054659-9b8361e0-1e9e-493c-88c6-25b2e943db6c.png)
+Manifest in Chrome Dev Tool 
+![image](https://user-images.githubusercontent.com/121307266/226054667-b8a852fc-dbeb-4a64-aeb5-cbfcd7d32e93.png)
+Service Worker in Chrome Dev Tool 
+![image](https://user-images.githubusercontent.com/121307266/226054670-add61f0f-870f-4ed7-9be1-a9e2acc46e66.png)
+Indexed DB in Chrome Dev Tool  
+![image](https://user-images.githubusercontent.com/121307266/226054676-28c92b38-ff13-4a8b-9a9d-cd362181e41d.png)
 
 ## QUESTIONS 
 If you have any questions, feel free to reach out to me!<br>
