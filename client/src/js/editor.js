@@ -2,6 +2,7 @@
 import { getDb, putDb } from './database';
 import { header } from './header';
 
+// Create a class Editor
 export default class Editor {
   constructor() {
     const localData = localStorage.getItem('content');
@@ -22,12 +23,12 @@ export default class Editor {
       tabSize: 2,
     });
 
-    // When the editor is ready, set the value to whatever is stored in indexeddb.
-    // Fall back to localStorage if nothing is stored in indexeddb, and if neither is available, set the value to header.
+    // Show header when it is the first visit
     this.editor.setValue(header);
     
     getDb().then((data) => {
       console.info('Loaded data from IndexedDB, injecting into editor');
+      // If indexedDB has data, show it in the editor text area
       if (data.content !== "" || data.content !== null) {
         this.editor.setValue(data.content);
       }
