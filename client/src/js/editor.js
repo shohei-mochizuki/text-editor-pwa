@@ -27,7 +27,7 @@ export default class Editor {
     getDb().then((data) => {
       console.info('Loaded data from IndexedDB, injecting into editor');
       console.log(this.editor);
-      this.editor.setValue(data || localData || header);
+      this.editor.setValue(data[0].content || localData || header);
     });
 
     // When the text in the editor is changed, save it to localStorage temporarily
