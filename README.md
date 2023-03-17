@@ -39,27 +39,32 @@ permit persons to whom the Software is furnished to do so.
 Feel free to develop this application by forking the GitHub repository and sending me pull requests. You can also contact me.
 
 ## TESTS 
-Copy the following files and folder to your computer and test this application:
+If you access the application on [Heroku](https://text-editor-pwa-2023.herokuapp.com/), you can test the application on Heroku. If you would like to test it on your local computer, copy the following files and folder to your computer:
 ```md
 .
-├── config/
-|   └── connection.js
-├── controllers/
-|   ├── thoughtController.js
-|   └── userController.js
-├── models/
-|   ├── index.js
-|   ├── Reaction.js
-|   ├── Thought.js
-|   └── User.js
-├── routes/
-|   ├── api/
-|   |   ├── index.js
-|   |   ├── thoughtRoutes.js
-|   |   └── userRoutes.js
-|   └── index.js      
-├── index.js  
-└── package.json 
+├── client/
+|   ├── favicon.ico
+|   ├── index.html
+|   ├── package.json
+|   ├── src/
+|   |   ├── css/
+|   |   |   └── style.css
+|   |   ├── images/
+|   |   |   └── logo.png
+|   |   └── js/
+|   |       ├── database.js
+|   |       ├── editor.js
+|   |       ├── header.js
+|   |       ├── index.js
+|   |       └── install.js
+|   ├── src-sw.js
+|   └── webpack.config.js
+├── package.json
+└── server/
+    ├── package.json
+    ├── routes/
+    |   └── htmlRoutes.js
+    └── server.js
 ``` 
 
 ## SCREENSHOTS
@@ -67,9 +72,6 @@ Copy the following files and folder to your computer and test this application:
 ![image](https://user-images.githubusercontent.com/121307266/225153976-ba6afa1d-40d7-48b8-96d4-caed8f88d16a.png)
 ![image](https://user-images.githubusercontent.com/121307266/225153979-6d60377c-30b2-478b-af19-4da92bb017c6.png)
 ![image](https://user-images.githubusercontent.com/121307266/225153980-c27a7f29-e942-4fa8-bb01-5140a863eeef.png)
-
-## DEMO
-[Demo video](https://watch.screencastify.com/v/S8VZw0ttoa1f948UhniH)
 
 ## QUESTIONS 
 If you have any questions, feel free to reach out to me!<br>
